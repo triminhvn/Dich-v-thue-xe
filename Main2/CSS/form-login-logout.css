@@ -1,0 +1,110 @@
+:root {
+  --form-color: #FFA500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  /* Hiệu ứng chuyển động */
+  animation: fadeIn 2s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: var(--form-color);
+  font-weight: bold;
+}
+
+.single-input input {
+  margin: 0px 0px 10px;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid rgb(25, 0, 255);
+}
+
+.single-input input {
+  border: 1px solid #ccc;
+  border-left-width: 3px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.single-input input:focus {
+  border-color: var(--form-color) !important;
+}
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--form-color);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover .button:hover {
+  background-color: #FF6600;
+  font-weight: bold;
+}
+
+.account-have {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0px 80px;
+  font-size: 15px;
+}
+
+.account-have a {
+  color: var(--form-color);
+  text-decoration: none;
+}
+
+#dacotaikhoan:hover,
+.quenmatkhau:hover,
+#taotaikhoanmoi:hover {
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

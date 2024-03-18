@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./images/about.png" type="image/png">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font-Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Grenze+Gotisch:wght@600&family=Signika:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap - Header -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Các file CSS -->
+    <link rel="stylesheet" href="./CSS/trangchu.css">
+    <link rel="stylesheet" href="./CSS/responsive-header-footer.css">
+    <link rel="stylesheet" href="./CSS/responsive-trangchu.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="/CSS/style.css"> 
+    <!-- Box Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <title> Trang chủ </title>
+</head>
+
+<body>
+    <!-- Phần đầu của trang web -->
+    <!-- Header sử dụng bootstrap 5 và đã có thêm class chỉnh sửa tùy biến phù hợp với trang web -->
+    <header class="header" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="./images/car.png" alt="logo-header"
+                    class="header__logo"></a>
+            <div class="nav-bar-main">
+                <div class="menu-choose">
+                    <a class="nav-item nav-link active" href="lienhe.html">
+                        <i class="fas fa-phone-alt call-icon"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link active" href="thanhtoan.html">
+                        <i class="fas fa-box-open box-icon">
+                            <span id="cart-number"></span></i><span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-item nav-link active" href="dangnhap.html">
+                        <i class="fas fa-user user-icon"></i><span class="sr-only">(current)</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="gioithieu.html">Giới thiệu<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="dichvu.html">Dịch vụ<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="tuyendung.html">Tuyển dụng<span class="sr-only">(current)</span></a> 
+                        <a class="nav-item nav-link active" href="lienhe.html">Liên hệ<span class="sr-only">(current)</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Phần thân của trang web -->
+    <!-- 
+         - Main - container
+            + introcuce - item1
+            + advertise - item2        
+
+        #Note: 
+            1. Phần introduce sử dụng position 
+            2. Phần advertise sử dụng Grid-Layout để chia bố cục
+    -->
+    <main class="main">
+        <section class="introduce se">
+            <!-- <div style="background-image: url(./images/trangchu.jpg); background-size: contain; width: 100%; padding: 50%; background-repeat: no-repeat;"></div> -->
+            <!-- <img src="./images/trangchu.jpg" alt="" class="introduce__img"> -->
+            <article class="introduce__recruit">
+                <!-- <h1 class="recruit-title">CASIO G-SQUAD</h1> -->
+                <!-- <h2 class="recruit-des">GBD H1000</h2> -->
+                <!-- <h2 class="recruit-money">199k</h2> -->
+                <button onclick="window.location.href='dichvu.html'" class="btn">ĐẶT XE NGAY</button>
+            </article>
+        </section>
+        
+        <!-- Giới thiệu -->
+        <section class="advertise se">
+                <article class="advertise__nutrition">
+                    <!-- <i class="fas fa-drumstick-bite chicken-icon"></i> -->
+                    <h2 class="advertise-title">VỀ CHÚNG TÔI</h2>
+                    <h2 class="advertise-title">DỊCH VỤ THUÊ XE N4</h2>
+                    <p class="advertise-dess">
+                        Chúng tôi luôn thấu hiểu nhu cầu đi lại của khách hàng từ đó giúp cho dịch vụ cho xe thuê N4 luôn phát triển từng ngày và không ngừng cập nhật các dòng xe mới, tân trang các nội và ngoại thất để có thể cung cấp các dịch vụ tốt nhất cho khách hàng của mình.
+                    </p>
+                    <a href="gioithieu.html"><button class="btn">TÌM HIỂU NGAY</button></a>
+                </article>
+                <article class="advertise__nutrition">
+                    <!-- <i class="far fa-calendar-alt calendar-icon"></i> -->
+                    <h2 class="advertise-title">CẦN THUÊ XE?</h2>
+                    <h2 class="advertise-title">LIÊN HỆ CHÚNG TÔI NGAY</h2>
+                    <p class="advertise-dess">
+                        Quý khách đặt xe liên hệ trực tiếp qua điện thoại: <br> 
+                        Mr An: 0939 346 068 Zalo  <br> 
+                        Ms Tuấn: 0898 838 068 Zalo  <br> 
+                        Hoặc vui lòng gửi thông tin yêu cầu dịch vụ qua Email: thuexeN4@gmail.com  <br> 
+                    </p>
+                    <a href="gioithieu.html"><button class="btn">TÌM HIỂU NGAY</button></a>
+                </article>
+            </section>
+
+             <!-- Ride -->
+            <section class="ride se" id="ride"> 
+                <div class="heading"> 
+                    <span> Chúng tôi cam kết rằng </span>
+                    <h1> Uy tín - Chuyên nghiệp - Nhanh chóng </h1>
+                </div>
+                <div class="ride-container"> 
+                    <div class="box">
+                        <i class='bx bxs-adjust-alt'></i>
+                        <h2> UY TÍN - GIÁ CẠNH TRANH </h2>
+                        <p> Chúng tôi kinh doanh lấy chữ Tín làm đầu và cung cấp đến khách hàng dịch vụ cho thuê xe giá rẻ nhưng chất lượng không hề rẻ.
+                    </div>
+
+                    <div class="box">
+                        <i class="bx bxs-calendar-check"></i>
+                        <h2> CHUYÊN NGHIỆP - NHANH CHÓNG </h2>
+                        <p> Đơn vị cho thuê xe N4 luôn cố gắng nỗ lực hết mình, hoàn thiện và tối ưu dịch vụ tốt nhất để phục vụ khách hàng được trọn vẹn và chu đáo </p>
+                    </div>
+
+                    <div class="box">
+                        <i class='bx bxl-paypal'></i>
+                        <h2> DỊCH VỤ CHO THUÊ  </h2>
+                        <p> Chúng tôi cung cấp đa dạng các dòng xe cho dịch vụ bao gồm: 4 chỗ, 16 chỗ, 32 chỗ. Đem lại cho khách hàng nhiều sự lựa chọn tối ưu. </p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Service -->
+            <section class="services se" id="services"> 
+                <div class="heading"> 
+                    <span> DANH MỤC CÁC LOẠI XE </span>
+                    <h1> KHÁM PHÁ NHỮNG LỰA CHỌN HÀNG ĐẦU <br> TỪ TOP NHỮNG GIAO DỊCH ĐƯỢC ĐÁNH GIÁ CAO NHẤT </h1>
+                </div>
+                <div class="services-container"> 
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-4-cho.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe 4 chỗ </h3>
+                        <h2>  500.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-7-cho.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe 7 chỗ </h3>
+                        <h2>  900.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-16-cho.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe 16 chỗ </h3>
+                        <h2>  1.350.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-29-cho.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe 29 chỗ </h3>
+                        <h2>  2.150.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-45-cho.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe 45 chỗ </h3>
+                        <h2>  3.000.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="./images/DichVuThue/xe-hoa-cuoi.jpg" alt=""> 
+                        </div>
+                        <p> 2023 </p>
+                        <h3> Xe cưới </h3>
+                        <h2>  200.000 VNĐ <span> /ngày </span> </h2>
+                    </div>
+                </div>
+                <a href="dichvu.html" class="btn2"> CHỌN XE </a> 
+            </section>
+                    <!-- About -->
+            <section class="about se" id="about"> 
+                <div class="heading"> 
+                    <span> HƯỚNG DẪN </span>
+                    <h1> Thuê xe chỉ với 3 bước </h1>
+                </div>
+                <div class="about-container"> 
+                    <div class="about-img"> 
+                        <img src="./images/TrangChu/about.png" alt=""> 
+                    </div>
+                    <div class="about-text"> 
+                        <span> Chọn địa điểm </span>
+                        <p> Hãy chọn một địa điểm mà bạn muốn thuê xe, tại trang web chúng tôi bạn có thể nhập tên thành phố, quận huyện, sân bay hay bạn cũng có thể chọn giao xe tận nơi nếu bạn muốn tiết kiệm thời gian và chi phí di chuyển. </p>
+                        <span> Chọn ngày đặt </span>
+                        <p> Bạn hãy nhập ngày và giờ bắt đầu và kết thúc thuê xe. Bạn nên đặt xe trước ít nhất một ngày để đảm bảo có xe phù hợp với nhu cầu của bạn. Bạn cũng nên xem xét các yếu tố như thời tiết, lễ tết, giờ cao điểm để tránh kẹt xe hoặc hết xe. </p>
+                        <span> Chọn thuê xe </span>
+                        <p>Chọn xe và điền thông tin thuê xe của bạn như họ tên, số điện thoại, địa chỉ, thẻ thanh toán,... Chọn xác nhận đơn đặt hàng và đợi xác nhận từ phía chúng tôi. Khi xác nhận thành công, bạn đã sẵn sàng để lấy xe tại địa điểm thuê vào ngày đặt.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Reviews -->
+            <section class="reviews se" id="reviews">
+                <div class="heading"> 
+                    <span> Reviews </span>
+                    <h1> Ý kiến khách hàng </h1>
+                </div>
+                <div class="reviews-container"> 
+                    <div class="box"> 
+                        <div class="rev-img"> 
+                            <img src="./images/TrangChu/rev1.jpg" alt=""> 
+                        </div>
+                        <h2> David Nguyễn </h2>
+                        <div class="stars">
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star-half"> </i>
+                        </div>
+                        <p> Dịch vụ thuê xe này rất đáng tin cậy và tôi đã sử dụng nó nhiều lần. Tất cả các chiếc xe đều được bảo trì tốt và nhân viên dịch vụ khách hàng rất thân thiện và hữu ích. Tôi cũng rất ấn tượng với việc họ cung cấp dịch vụ đưa đón sân bay cho khách hàng. Tôi đã giới thiệu dịch vụ này cho bạn bè và đồng nghiệp của tôi và họ đều rất hài lòng với dịch vụ này. </p>
+                    </div>
+
+                    <div class="box"> 
+                        <div class="rev-img"> 
+                            <img src="./images/TrangChu/rev2.jpg" alt=""> 
+                        </div>
+                        <h2> Andy Phạm </h2>
+                        <div class="stars">
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                        </div>
+                        <p> Tôi rất hài lòng với dịch vụ thuê xe của công ty này, từ quá trình đặt xe trực tuyến đến việc nhận xe đúng giờ, xe sạch sẽ và được bảo trì tốt, nhân viên của công ty rất thân thiện, họ đã cung cấp cho tôi các lời khuyên hữu ích về việc lái xe trong khu vực. Tôi chắc chắn sẽ sử dụng lại dịch vụ này trong tương lai. </p>
+                    </div>
+
+                    <div class="box"> 
+                        <div class="rev-img"> 
+                            <img src="./images/TrangChu/rev3.jpg" alt=""> 
+                        </div>
+                        <h2> Hana Nguyễn </h2>
+                        <div class="stars">
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star"> </i>
+                            <i class="bx bxs-star-half"> </i>
+                        </div>
+                        <p> Xe được giao đúng giờ, sạch sẽ và tiện nghi. Nhân viên thân thiện và chuyên nghiệp. Giá cả hợp lý và minh bạch. Tôi sẽ giới thiệu dịch vụ này cho bạn bè và người thân của tôi. Cảm ơn công ty đã mang đến cho tôi trải nghiệm tuyệt vời. </p>
+                    </div>
+                </div>            
+            </section>
+    </main>
+
+    <!-- Phần chân trang -->
+    <!-- 
+       - Footer - container
+            + content__footer - item1
+            + footer__copyright - item2
+            + footer-top - item3
+
+        #Note: 
+            1. Phần content_footer sử dụng kĩ thuật Grid-Layout
+            2. Phần footer-top sử dụng position để đưa phần web đang ở cuối trang về đầu trang
+    -->
+    <footer class="footer">
+        <section class="content__footer newsletter"> 
+            <article class="footer__address">
+                <h2 class="address__title">DỊCH VỤ THUÊ XE N4 </h2>
+                <p class="address__street">Phường Xuân Khánh, Quận Ninh Kiều, TP Cần Thơ</p>
+            </article>
+            <article class="footer__phone">
+                <p class="phone__title">Gọi ngay</p>
+                <a href="lienhe.html" class="phone__number">0342<span class="space">040</span>063</a>
+            </article>
+            <article class="footer__time">
+                <p class="time-open">Giờ mở cửa: 08:00 - 22:00</p>
+                <p class="time-sunday">Mở cửa vào cả ngày LỄ và CHỦ NHẬT.</p>
+            </article>
+            
+        </section>
+        <section class="footer__copyright">
+           <span> © Copyright 2023 </span>  <strong class="chicken-dev chicken-dev--color">DỊCH VỤ THUÊ XE N4</strong> <span> . All rights
+            reserved </span>
+        </section>
+        <a href="#top"><img src="./images/top.png" alt="top" class="footer-top"></a>
+    </footer>
+
+    <!-- Phần JavaScrip và Bootstrap  -->
+    <!-- 
+        #Note: 
+            1. Ở 3 script cuối cùng là của bootstrap để sử dụng cho header
+            2. Các script còn lại để phục vụ cho các mục đích khác nhau của trang web
+     -->
+    <script src="./JS/main.js"></script>
+    <script src="./JS/modifyCart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #fe5b3d;
+    --second-color: #ffac38; 
+    --text-color: #444;
+    --gradient: linear-gradient(#fe5b3d, #ffac38); 
+}
+
+/*Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+/* Mô tả section */
+section.se{
+    padding: 50px 100px;
+}
+
+
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.heading h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.ride{
+    background-image: url("/images/car2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+.ride-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.ride span{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid white;
+    background-color: green;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
+}
+
+.ride p{
+    color: black;
+    background-color: white;
+    padding: 4px;
+    border-radius: 0 0 5px 5px;
+    margin-left: 10px;
+}
+.ride h1{
+    color: rgb(250, 242, 242);
+    background-color: green;
+    border: 1px solid rgb(250, 242, 242);
+    width: 600px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.ride-container .box{
+    text-align: center;
+    padding: 20px;
+}
+
+.ride-container .box .bx{
+    font-size: 20px;
+    padding: 10px;
+    background: #fbfbfd;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+
+.ride-container p{
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+    padding: 15px;
+}
+
+.ride-container .box h2{
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
+    margin: 1.4rem 0 0 0.5rem;
+}
+
+.ride-container .box .bx:hover, .ride-container .box .bxs-calendar-check{
+    background: var(--gradient);
+    color: #fff;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+}
+
+.services-container .box .box-img{
+    width: 100%;
+    height: 200px;
+}
+
+.services-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services-container .box p{
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.services-container .box h3{
+    font-weight: 500;
+}
+
+.services-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color) ;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.services-container .box h2 span{
+    font-size: 0.8r;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Nút của service */
+.btn2{
+    display: block;
+    justify-content: center;
+    background: rgb(231, 87, 4);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 30%;
+    text-decoration: none!important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn2:hover{
+    background: orange;
+    color: black;
+    font-weight: bold;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-text span{
+    font-weight: 500;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+
+.about-text .btn{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+
+}
+
+.about-text .btn:hover{
+    background: var(--main-color);
+}
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+}
+
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.reviews-container .box p{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reviews-container .box .stars .bx{
+    color: var(--main-color);
+}
+
+/* footer */
+.newsletter{
+    background: linear-gradient(to top right, #fe5b3d, #ffac38 );
+}
+
+/* tuyendung */
+.home{
+    width: 100%;
+    min-height: 55vh;
+    position: relative;
+    background: url("https://wallpapers.com/images/hd/entrepreneur-graphs-9ebg7yuqnrs8zte8.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.text .text2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px olivedrab;
+}
+.text{
+    bottom: 50px;
+}
+.text .text1{
+    color: var(--main-color);
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0.3px 0.3px black;
+}
+
+.text p{
+    margin: 00.5rem 0 1rem ;
+}
